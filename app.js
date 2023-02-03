@@ -12,15 +12,13 @@ console.log(messaggeForUser)
 for (let i = 0; i < mail.length; i++){
     let emailVerify = emailUtente
 
-    let emailDenied = emailUtente
-
 
     if (emailUtente === mail[i]){
         messaggeForUser.innerHTML = '<h1> Ottimo ' + emailVerify + ' è presente nel nostro database. Bentornato </h1>'
         break
         // console.log('mail verificata')
     } else {
-        messaggeForUser.innerHTML = '<h1> Peccato ' + emailDenied + ' non fa parte del nostro database.Iscriviti alla community se vuoi rimanere aggiornato </h1>'
+        messaggeForUser.innerHTML = '<h1> Peccato ' + emailVerify + ' non fa parte del nostro database.Iscriviti alla community se vuoi rimanere aggiornato </h1>'
     }
 
 
